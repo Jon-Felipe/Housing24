@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className='full-page'>
         <h1>hello world</h1>
       </main>
       <Footer />
