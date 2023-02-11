@@ -1,7 +1,16 @@
 import React from 'react';
 
+// components
+import NavLinks from './NavLinks';
+import ProfileLinks from './ProfileLinks';
+
 const Header = () => {
-  return <div>Header</div>;
+  return (
+    <nav>
+      <NavLinks />
+      <ProfileLinks />
+    </nav>
+  );
 };
 
 export default Header;
