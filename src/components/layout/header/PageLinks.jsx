@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 // links
-import { pageLinks } from '../../utils/constants';
+import { pageLinks } from '../../../utils/constants';
 
 const PageLinks = () => {
   return (

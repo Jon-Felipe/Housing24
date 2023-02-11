@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 // links
-import { profileLinks } from '../../utils/constants';
+import { profileLinks } from '../../../utils/constants';
 
 const ProfileLinks = () => {
   return (
