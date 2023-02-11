@@ -45,7 +45,6 @@ const HeaderWrapper = styled.header`
     .header-content {
       display: grid;
       grid-template-columns: 200px 1fr;
-      /* place-items: center; */
     }
   }
 `;
