@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 // components
 import NavLinks from './NavLinks';
-import ProfileLinks from './ProfileLinks';
 
 const Header = () => {
   return (
@@ -15,10 +14,7 @@ const Header = () => {
             <p>x</p>
           </div>
         </div>
-        <nav className='links'>
-          <NavLinks />
-          <ProfileLinks />
-        </nav>
+        <NavLinks />
       </div>
     </HeaderWrapper>
   );
@@ -41,9 +37,6 @@ const HeaderWrapper = styled.header`
     align-items: center;
     justify-content: space-between;
   }
-  .links {
-    display: none;
-  }
 
   @media screen and (min-width: 670px) {
     .toggle-btn {
@@ -52,11 +45,7 @@ const HeaderWrapper = styled.header`
     .header-content {
       display: grid;
       grid-template-columns: 200px 1fr;
-      place-items: center;
-    }
-    .links {
-      display: flex;
-      align-items: center;
+      /* place-items: center; */
     }
   }
 `;
