@@ -9,7 +9,9 @@ const Header = () => {
     <HeaderWrapper>
       <div className='header-content'>
         <div className='header-action'>
-          <h2>housing24</h2>
+          <h2>
+            housing<span>24</span>
+          </h2>
           <div className='toggle-btn'>
             <button>x</button>
           </div>
@@ -38,6 +40,11 @@ const HeaderWrapper = styled.header`
     justify-content: space-between;
     h2 {
       letter-spacing: 1px;
+      cursor: pointer;
+      span {
+        color: var(--primary-500);
+        font-weight: bold;
+      }
     }
   }
   .toggle-btn {
