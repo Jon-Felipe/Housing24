@@ -15,3 +15,16 @@ export const pageLinks = [
     url: '/compare',
   },
 ];
+
+export const profileLinks = [
+  {
+    id: 1,
+    text: 'Login',
+    url: '/login',
+  },
+  {
+    id: 2,
+    text: 'Register',
+    url: '/register',
+  },
+];
