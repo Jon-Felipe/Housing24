@@ -111,6 +111,10 @@ h5 {
   font-size: 1.25rem;
 }
 
+p {
+  margin: 0;
+}
+
 small,
 .text-small {
   font-size: var(--small-text);

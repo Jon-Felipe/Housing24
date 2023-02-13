@@ -11,9 +11,7 @@ const Home = () => {
       <section>
         <FilterBar />
       </section>
-      <section>
-        <PropertyListings />
-      </section>
+      <section>{/* <PropertyListings /> */}</section>
     </HomeWrapper>
   );
 };

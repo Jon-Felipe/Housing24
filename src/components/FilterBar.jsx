@@ -1,10 +1,53 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// components
+import Blurb from './ui/Blurb';
+
+// property categories
+import { propertyCategories } from '../utils/constants';
+
 const FilterBar = () => {
-  return <FilterBarWrapper>FilterBar</FilterBarWrapper>;
+  return (
+    <FilterBarWrapper>
+      {/* property filters */}
+      <div className='filterbar-content'>
+        <div className='property-filters'>
+          {propertyCategories.map((category) => {
+            return (
+              <Blurb
+                key={category.id}
+                icon={category.icon}
+                text={category.text}
+              />
+            );
+          })}
+        </div>
+
+        {/* search bar */}
+      </div>
+    </FilterBarWrapper>
+  );
 };
 
 export default FilterBar;
 
-const FilterBarWrapper = styled.div``;
+const FilterBarWrapper = styled.div`
+  background-color: var(--white);
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--shadow-1);
+  .filterbar-content {
+    width: 90vw;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 700px 1fr;
+  }
+  .property-filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+`;

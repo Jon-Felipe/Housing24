@@ -1,5 +1,11 @@
 import React from 'react';
 import { FiLogIn, FiUserPlus } from 'react-icons/fi';
+import {
+  MdHome,
+  MdVilla,
+  MdOutlineHomeWork,
+  MdApartment,
+} from 'react-icons/md';
 
 export const pageLinks = [
   {
@@ -31,5 +37,32 @@ export const profileLinks = [
     text: 'Register',
     url: '/register',
     icon: <FiUserPlus />,
+  },
+];
+
+export const propertyCategories = [
+  {
+    id: 1,
+    text: 'All Categories',
+  },
+  {
+    id: 2,
+    text: 'Home',
+    icon: <MdHome />,
+  },
+  {
+    id: 3,
+    text: 'Villa',
+    icon: <MdVilla />,
+  },
+  {
+    id: 4,
+    text: 'Residence',
+    icon: <MdOutlineHomeWork />,
+  },
+  {
+    id: 5,
+    text: 'Apartment',
+    icon: <MdApartment />,
   },
 ];
