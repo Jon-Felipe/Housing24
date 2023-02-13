@@ -26,7 +26,7 @@ const FilterBar = () => {
         </div>
 
         {/* search bar */}
-        <Search />
+        <Search type='text' placeholder='Search e.g. Home Apartment...' />
       </div>
     </FilterBarWrapper>
   );
@@ -44,8 +44,9 @@ const FilterBarWrapper = styled.div`
     width: 90vw;
     max-width: 1440px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 700px 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .property-filters {
     display: flex;
