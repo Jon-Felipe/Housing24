@@ -28,7 +28,7 @@ const HeaderWrapper = styled.header`
   display: flex;
   align-items: center;
   height: 5rem;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   background-color: var(--white);
   .header-content {
     width: 90vw;
