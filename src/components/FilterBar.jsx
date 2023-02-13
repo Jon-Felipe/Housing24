@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 // components
 import Blurb from './ui/Blurb';
+import Search from './ui/Search';
 
 // property categories
 import { propertyCategories } from '../utils/constants';
@@ -25,6 +26,7 @@ const FilterBar = () => {
         </div>
 
         {/* search bar */}
+        <Search />
       </div>
     </FilterBarWrapper>
   );
