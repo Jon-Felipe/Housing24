@@ -8,7 +8,11 @@ const ProfileLinks = () => {
   return (
     <ProfileLinksWrapper>
       {profileLinks.map((link) => {
-        return <li key={link.id}>{link.text}</li>;
+        return (
+          <li key={link.id}>
+            {link.icon} {link.text}
+          </li>
+        );
       })}
     </ProfileLinksWrapper>
   );
@@ -22,6 +26,8 @@ const ProfileLinksWrapper = styled.ul`
   justify-content: space-between;
   column-gap: 0.5rem;
   li {
+    display: flex;
+    align-items: center;
     border: 1px solid var(--primary-500);
     border-radius: var(--borderRadius);
     background-color: var(--primary-500);
@@ -30,6 +36,9 @@ const ProfileLinksWrapper = styled.ul`
     font-size: 1.15rem;
     letter-spacing: var(--letterSpacing);
     cursor: pointer;
+    svg {
+      margin-right: 5px;
+    }
   }
   li:hover {
     background-color: var(--white);

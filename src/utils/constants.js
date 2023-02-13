@@ -1,3 +1,6 @@
+import React from 'react';
+import { FiLogIn, FiUserPlus } from 'react-icons/fi';
+
 export const pageLinks = [
   {
     id: 1,
@@ -21,10 +24,12 @@ export const profileLinks = [
     id: 1,
     text: 'Login',
     url: '/login',
+    icon: <FiLogIn />,
   },
   {
     id: 2,
     text: 'Register',
     url: '/register',
+    icon: <FiUserPlus />,
   },
 ];
