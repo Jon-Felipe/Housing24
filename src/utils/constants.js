@@ -1,11 +1,6 @@
 import React from 'react';
 import { FiLogIn, FiUserPlus } from 'react-icons/fi';
-import {
-  MdHome,
-  MdVilla,
-  MdOutlineHomeWork,
-  MdApartment,
-} from 'react-icons/md';
+import { MdHome, MdVilla, MdApartment } from 'react-icons/md';
 
 export const pageLinks = [
   {
@@ -57,11 +52,6 @@ export const propertyCategories = [
   },
   {
     id: 4,
-    text: 'Residence',
-    icon: <MdOutlineHomeWork />,
-  },
-  {
-    id: 5,
     text: 'Apartment',
     icon: <MdApartment />,
   },

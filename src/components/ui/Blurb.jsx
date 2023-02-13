@@ -17,16 +17,23 @@ const BlurbWrapper = styled.button`
   align-items: center;
   border: 1px solid var(--grey-100);
   border-radius: 30px;
-  padding: 13px 25px;
+  padding: 10px 15px;
   background-color: var(--white);
   cursor: pointer;
   svg {
     color: var(--grey-700);
     margin-right: 5px;
-    font-size: 1.15rem;
   }
   p {
     color: var(--grey-500);
-    font-size: 1rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    svg {
+      font-size: 1.15rem;
+    }
+    p {
+      font-size: 1rem;
+    }
   }
 `;

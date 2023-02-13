@@ -21,6 +21,7 @@ const SearchWrapper = styled.div`
   padding: 13px 35px;
   border-radius: 30px;
   width: 100%;
+  box-shadow: var(--shadow-1);
   input {
     border: transparent;
     background-color: transparent;
