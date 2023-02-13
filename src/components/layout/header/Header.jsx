@@ -29,6 +29,7 @@ const HeaderWrapper = styled.header`
   align-items: center;
   height: 5rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  background-color: var(--white);
   .header-content {
     width: 90vw;
     max-width: 1440px;
