@@ -4,6 +4,7 @@ import { FaHeart } from 'react-icons/fa';
 
 // components
 import Card from '../ui/Card';
+import Pill from '../ui/Pill';
 
 // extras
 import { properties } from '../../utils/constants';
@@ -17,10 +18,24 @@ const Properties = () => {
         <Card key={property.id}>
           <div className='property'>
             <img src={house1} alt='house' />
-            <div className='property-content'>
+            <div className='property-details'>
+              <Pill>
+                <p className='category'>{property.category}</p>
+              </Pill>
               <h4 className='text'>{property.text}</h4>
               <p className='address'>{property.address}</p>
               <p className='price'>${formatNumber(property.price)}</p>
+              <div className='property-info'>
+                <Pill>
+                  <p>{property.beds} Beds</p>
+                </Pill>
+                <Pill>
+                  <p>{property.baths} Baths</p>
+                </Pill>
+                <Pill>
+                  <p>{property.size} m2</p>
+                </Pill>
+              </div>
               <div className='favourite-icon'>
                 <FaHeart />
               </div>
@@ -47,7 +62,7 @@ const PropertiesWrapper = styled.section`
       object-fit: cover;
     }
   }
-  .property-content {
+  .property-details {
     padding: 10px 15px;
     .text {
       font-size: 1.2rem;
@@ -61,6 +76,11 @@ const PropertiesWrapper = styled.section`
       font-size: 1.35rem;
       font-weight: bold;
       color: var(--primary-500);
+    }
+    .property-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     .favourite-icon {
       position: absolute;
