@@ -56,3 +56,54 @@ export const propertyCategories = [
     icon: <MdApartment />,
   },
 ];
+
+export const properties = [
+  {
+    id: 1,
+    text: 'Elegant White Premium',
+    address: '326 Sarangan Street, Malang, ID',
+    price: 721000,
+  },
+  {
+    id: 2,
+    text: 'Elegant White Premium',
+    address: '326 Sarangan Street, Malang, ID',
+    price: 721000,
+  },
+  {
+    id: 3,
+    text: 'Elegant White Premium',
+    address: '326 Sarangan Street, Malang, ID',
+    price: 721000,
+  },
+  {
+    id: 4,
+    text: 'Elegant White Premium',
+    address: '326 Sarangan Street, Malang, ID',
+    price: 721000,
+  },
+  {
+    id: 5,
+    text: 'Elegant White Premium',
+    address: '326 Sarangan Street, Malang, ID',
+    price: 721000,
+  },
+  {
+    id: 6,
+    text: 'Elegant White Premium',
+    address: '326 Sarangan Street, Malang, ID',
+    price: 721000,
+  },
+  {
+    id: 7,
+    text: 'Elegant White Premium',
+    address: '326 Sarangan Street, Malang, ID',
+    price: 721000,
+  },
+  {
+    id: 8,
+    text: 'Elegant White Premium',
+    address: '326 Sarangan Street, Malang, ID',
+    price: 721000,
+  },
+];

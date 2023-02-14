@@ -14,9 +14,7 @@ const Home = () => {
       </section>
 
       {/* List of properties */}
-      <section>
-        <Properties />
-      </section>
+      <Properties />
     </HomeWrapper>
   );
 };
