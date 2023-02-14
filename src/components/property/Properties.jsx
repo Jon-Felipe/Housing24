@@ -7,6 +7,7 @@ import Card from '../ui/Card';
 // extras
 import { properties } from '../../utils/constants';
 import house1 from '../../assets/house-1.jpg';
+import { formatNumber } from '../../utils/helpers';
 
 const Properties = () => {
   return (
@@ -18,7 +19,7 @@ const Properties = () => {
             <div className='property-content'>
               <h4 className='text'>{property.text}</h4>
               <p className='address'>{property.address}</p>
-              <p className='price'>${property.price}</p>
+              <p className='price'>${formatNumber(property.price)}</p>
             </div>
           </div>
         </Card>
