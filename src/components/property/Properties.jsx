@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FaHeart } from 'react-icons/fa';
 
 // components
 import Card from '../ui/Card';
@@ -20,6 +21,9 @@ const Properties = () => {
               <h4 className='text'>{property.text}</h4>
               <p className='address'>{property.address}</p>
               <p className='price'>${formatNumber(property.price)}</p>
+              <div className='favourite-icon'>
+                <FaHeart />
+              </div>
             </div>
           </div>
         </Card>
@@ -37,6 +41,7 @@ const PropertiesWrapper = styled.section`
   display: grid;
   grid-row-gap: 1.5rem;
   .property {
+    position: relative;
     img {
       width: 100%;
       object-fit: cover;
@@ -53,9 +58,30 @@ const PropertiesWrapper = styled.section`
       color: var(--grey-400);
     }
     .price {
-      font-size: 1.5rem;
+      font-size: 1.35rem;
       font-weight: bold;
       color: var(--primary-500);
+    }
+    .favourite-icon {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      width: 45px;
+      height: 45px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        color: var(--red-medium);
+        font-size: 1.2rem;
+        cursor: pointer;
+        :hover {
+          transform: scale(1.2);
+          transition: var(--transition);
+        }
+      }
     }
   }
 
