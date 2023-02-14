@@ -3,15 +3,20 @@ import styled from 'styled-components';
 
 // components
 import FilterBar from '../components/FilterBar';
-import PropertyListings from '../components/PropertyListings';
+import Properties from '../components/property/Properties';
 
 const Home = () => {
   return (
     <HomeWrapper className='full-page'>
+      {/* Filter bar */}
       <section>
         <FilterBar />
       </section>
-      <section>{/* <PropertyListings /> */}</section>
+
+      {/* List of properties */}
+      <section>
+        <Properties />
+      </section>
     </HomeWrapper>
   );
 };
