@@ -20,6 +20,14 @@ const BlurbWrapper = styled.button`
   padding: 10px 15px;
   background-color: var(--white);
   cursor: pointer;
+  :hover {
+    background-color: var(--primary-500);
+    transition: var(--transition);
+  }
+  :hover > * {
+    color: var(--white);
+    transition: var(--transition);
+  }
   svg {
     color: var(--grey-700);
     margin-right: 5px;
